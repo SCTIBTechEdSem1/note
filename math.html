@@ -1,0 +1,125 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="StyleCode/style.css" />
+</head>
+
+<script>
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+//code for hide link and show
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.toggle-link');
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const description = this.nextElementSibling;
+            if (description.style.display === 'none' || description.style.display) {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+
+
+<body>
+<header id="mainHeader">
+ <nav id="mainNav">
+    <a href="index.html">Tp</a>
+    <a href="programingc.html">#C</a>
+    <a href="#">Math</a>
+    <a href="softwaredevelopment.html">Sd</a>
+    <a href="Informationsystem.html">Is</a>
+ </nav> 
+</header>
+
+<main>
+<center>
+    <h1>Mathematical Concepts</h1>
+    <section id="one">
+        <h3>Unit - 2 (Set Defination)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><u>Set Defination</u></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The collection of well defined object is called Set.
+                        It is denoted by capital letters and elements / members are denoted by small numbers. </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr><td>1) A = {a,b,c,d}</td><tr>
+                <tr><td>2) B = {x:x is a prime numbers less than 7}</td></tr>
+                <tr><td>3) C = The set of even numbers less than 10</td></tr>
+
+
+
+            </tbody>
+        </table>
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Union Of Sets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Intersection of sets.</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>Compement of sets.</td>
+                </tr>
+
+                <tr>
+                    <td>03</td>
+                    <td>Difference of sets.</td>
+                </tr>
+
+                <tr>
+                    <td>04</td>
+                    <td>Symetric of sets.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+</section>
+</center>
+
+</main>
+ <script src="script.js"></script>
+</body>
+</html>
