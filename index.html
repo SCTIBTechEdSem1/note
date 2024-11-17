@@ -1,8 +1,68 @@
-<html>
-  <head>
-    <title>SCTI B.TechEd Sem1 Note</title>
-  </head>
-  <body>
-    <h1>App Developed By Kyubiks</h1>
-  </body>
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="StyleCode/style.css" />
+</head>
+
+<script>
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+//code for hide link and show
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.toggle-link');
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const description = this.nextElementSibling;
+            if (description.style.display === 'none' || description.style.display) {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+
+
+<body>
+<header id="mainHeader">
+ <nav id="mainNav">
+    <a href="#">Tp</a>
+    <a href="programingc.html">#C</a>
+    <a href="math.html">Math</a>
+    <a href="softwaredevelopment.html">Sd</a>
+    <a href="Informationsystem.html">Is</a>
+ </nav> 
+</header>
+
+<main>
+<center>
+    <h1>Teaching Profession</h1>
+    <section id="one">
+
+
+</section>
+</center>
+
+</main>
+ <script src="script.js"></script>
+</body>
 </html>
+
