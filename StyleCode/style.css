@@ -60,11 +60,10 @@ nav {
     background-color: rgb(39, 32, 32);
     width: 100%;
     display: flex;
-    justify-content: center; /* Center links */
-    align-items: center; /* Center vertically */
-    padding: 10px 0; /* Spacing for better usability */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Sticks to the top */
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -72,12 +71,10 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px; /* Spacing around links */
-    font-size: 16px; /* Medium font size for all devices */
-    border-radius: 5px; /* Slight rounding for buttons */
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 0 2px;
     transition: background-color 0.3s ease;
-    margin: 0 10px; /* Spacing between links */
-    text-align: center;
 }
 
 nav a:hover {
@@ -85,42 +82,6 @@ nav a:hover {
     color: black;
 }
 
-/* Icon for links (if needed, optional) */
-nav a i {
-    font-size: 20px; /* Icon size */
-    margin-right: 5px; /* Spacing between icon and text */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap; /* Wrap links to multiple lines if needed */
-        padding: 8px 0; /* Reduce vertical padding */
-    }
-
-    nav a {
-        font-size: 14px; /* Slightly smaller font for smaller screens */
-        padding: 8px 15px; /* Reduce padding */
-        margin: 5px; /* Adjust margin for compactness */
-    }
-
-    nav a i {
-        font-size: 18px; /* Reduce icon size slightly */
-    }
-}
-
-/* Adjustments for very small screens */
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column; /* Stack links vertically if space is limited */
-    }
-
-    nav a {
-        width: 90%; /* Full-width links */
-        text-align: center; /* Center align text */
-        margin: 5px 0; /* Vertical spacing for stacked links */
-    }
-}
 
 .description {
     display: none; /* Initially hide the descriptions */
