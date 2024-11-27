@@ -57,7 +57,7 @@ header {
 
 /* Header and navbar */
 nav {
-    background-color: rgb(39, 32, 32);
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -81,6 +81,7 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
+
 
 
 .description {
@@ -112,7 +113,7 @@ header {
 }
 
 nav {
-    background-color: rgb(39, 32, 32);
+    background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -155,4 +156,45 @@ section {
 .navbar.scrolled {
     background-color:#1B7EB5 /* Darker background color */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+    
+}
+
+/* Math CSS*/
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+.fraction span {
+    display: block;
+    padding: 0;
+}
+.fraction .top {
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+.fraction .bottom {
+    padding-top: 2px;
+}
+i {
+    font-style: italic;
+}
+
+.union {
+    font-size: 24px; /* Adjust size as needed */
+}
+.upper-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 15px; /* Adjust size as needed */
+}
+.upper-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1.5px solid black;
+    
 }
