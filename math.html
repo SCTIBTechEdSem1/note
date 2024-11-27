@@ -172,12 +172,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 <tr><td>= {b, c}</td></tr>
                 <tr><td>AUB = {a, b, c} U {b, c, d}</td></tr>
                 <tr><td>= {a, b, c, d}</td></tr>
-                <tr><td>3) Complement of set: Ā = {X: X&#8712;U and X&#8713;A} </td></tr>
+                <tr><td>3) Complement of set: Ā = {X : X&#8712;U and X&#8713;A} </td></tr>
                 <tr><td>4) Difference of sets: A - B = {X = X&#8712;A and X&#8713;B}</td></tr>
                 <tr><td>5) Symmetric Difference of sets: A &#8710; B = (A - B) = U (B-A)</td></tr>
-                <tr><td>= {X: X&#8712;(A - B) OR X&#8712;(B - A)}</td></tr>
-
-                
+                <tr><td>= {X : X&#8712;(A - B) OR X&#8712;(B - A)}</td></tr>          
             </tbody>
         </table>
 
@@ -185,32 +183,119 @@ document.addEventListener('DOMContentLoaded', function () {
         <table>
             <thead>
                 <tr>
-                    <th>Sn</th>
-                    <th>Union Of Sets</th>
+                    <th>1) If U = { X : X is a natural number less than 20 } <br><br>
+                    A = { X : X  <u>></u> 6 } <br><br>
+                    B = { X : X <u><</u> 8 and <br><br>
+                    C = { X : 10 < X < 13 } <br><br>
+                    Then Find, <br><br>
+                    a) A&#8745;B <br><br>
+                    b) A - C <br> <br>
+                    c) (AUB)<sup>'</sup> / (<span class="upper-underline">AUB</span>)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>Intersection of sets.</td>
-                </tr>
-
-                <tr>
-                    <td>02</td>
-                    <td>Compement of sets.</td>
-                </tr>
-
-                <tr>
-                    <td>03</td>
-                    <td>Difference of sets.</td>
-                </tr>
-
-                <tr>
-                    <td>04</td>
-                    <td>Symetric of sets.</td>
-                </tr>
+                <tr><td>Solution Here,</td></tr>
+                <tr><td>U = { 1 , 2 , 3, ........... ,19,20 }</td></tr>
+                <tr><td>A = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 }</td></tr>
+                <tr><td>B = { 1, 2, 3, 4, 5, 6, 7, 8 }</td></tr>
+                <tr><td>C = { 11, 12 }</td></tr>
+                <tr><td>A&#8745;B = { 6, 7, 8 }</td></tr>
+                <tr><td>A - C = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 }</td></tr>
+                <tr><td>A - C = { 6, 7, 8, 9, 10 , 11, 12, 13, 14, 15, 16, 17, 18, 19 }</td></tr>
+                <tr><td><span class="upper-underline">AUB</span> = {20}</td></tr>
             </tbody>
         </table>
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>If U = { a, b, c, .... x, y z } <br><br>
+                        &nbsp;&nbsp;&nbsp; A = { a, b, c, d} <br><br>
+                        &nbsp;&nbsp;&nbsp; B = { c, d } <br><br>
+                        &nbsp;&nbsp;&nbsp; C = { d, e, f } <br><br>
+                        Then, verify that (i) AU(B&#8745;C)<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        (ii) (AUB) &#8745; (AUC)<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                        (iii) <span class="upper-underline">AUB</span> =
+                        <span class="upper-underline">A</span>&#8745;<span class="upper-underline">B</span><br><br>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>
+                Soultion Here,<br><br>
+                (i) AU(B&#8745;C) <br><br>
+                AUB = { a, b, c, d } <br><br>
+                AUC = { a, b, c, d, e, f } <br><br>
+                (AUB) &#8745; (AUC) = { a, b, c, d } <br><br>
+                </td></tr>
+
+                <tr><td>
+                    (ii) (AUB) &#8745; (AUC) <br><br>
+                    AUB = { a, b, c, d } <br><br>
+                    AUC = { a, b, c, d, e, f } <br><br>
+                    (AUB) &#8745; (AUC) = { a, b, c, d } <br><br>
+                </td></tr>
+
+                <tr><td>
+                    (iii) <span class="upper-underline">AUB</span> =
+                    <span class="upper-underline">A</span>&#8745;<span class="upper-underline">B</span><br><br>
+                    (iii) <span class="upper-underline">AUB</span> = { e, f, g....... x, y, z } <br><br>
+                    <span class="upper-underline">A</span> = { e, f, g, h, ......... x, y, z }<br><br>
+                    <span class="upper-underline">B</span> = { a, b, e, f, ......... x, y, z }<br><br>
+                    <span class="upper-underline">A</span>&#8745;<span class="upper-underline">B</span>
+                    = { e, f, g, h, ....... x, y, z } <br><br>
+                    &#8756; <span class="upper-underline">AUB</span> =
+                    <span class="upper-underline">A</span>&#8745;<span class="upper-underline">B</span><br><br>
+
+                </td></tr>
+            </tbody>
+        </table>
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>1) Union Of Sets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1) Intersection of sets.</td></tr>
+                <tr><td>2) Compement of sets.</td></tr>
+                <tr><td>3) Difference of sets.</td></tr>
+                <tr><td>4) Symetric of sets.</td></tr>
+            </tbody>
+        </table>
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>2) If U = { a, b, c, d, e, f, g, h } <br><br>
+                        A = { a, b, c, } and B = { c, d, e, f } <br><br>
+                        Then,<br><br>
+                        Find <span class="upper-underline">AUB</span> 
+                        and Show it in ven-diagram.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>
+                Solution Here,<br><br>
+                AUB = { a, b, c} U { c, d, e, f } <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { a, b, c, d, e, f } <br><br>
+                <span class="upper-underline">AUB</span> = U - (AUB) <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { a, b, c, d, e, f, g, h } - {a , b, c, d, e, f,}<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { g, h }
+            </td></tr>
+            </tbody>
+        </table>
+
 </section>
 </center>
 
