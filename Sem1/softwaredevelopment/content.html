@@ -1,0 +1,119 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="../Kyubiks/StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+  <!-- Header and Navbar -->
+  <header>
+    <nav id="navbar">
+        <a href="../Kyubiks/Kyubiks.html">Kyubiks</a>
+        <a href="../Kyubiks/onlineshop.html">Online Shop</a>
+        <a href="subject.html">Subject</a>
+        <a href="../Kyubiks/sem1.html"><label style="color:red;">Sem1</label></a>
+        
+    </nav>
+  </header>
+
+  <!-- Bottom Fixed Navigation -->
+ <div id="bottomNav">
+    <a href="softwaredevelopment.html">Note</a>
+    <a href="#"><label style="color:green;">Content</label></a>
+    <a href="assign.html">Assign</a>
+    <a href="syllabus.html">Syllabus</a>
+  </div>
+
+<main>
+<center>
+<center><h1>Unit 1</h1></center>
+<section id="one">
+    <table><thead><tr><td><center><label style ="color:red;"><u>Concept of Software Development</u></label></center></td></tr></thead></table>
+    <br>
+
+    <table>
+      <thead><tr><th>1. What is Software Development?</th></tr>
+      </thead>
+      <tbody><tr><td>• Software development is the process of designing, coding, testing, and maintaining software applications and systems.</td></tr>
+        <tr><td>•	It involves transforming an idea or requirement into a functional program that solves a specific problem or performs a set of tasks.</td></tr>
+    </tbody>
+    </table>
+    <br>
+
+    <table>
+      <thead><tr><th>2. Phases of Software Development Life Cycle (SDLC)</th></tr></thead>
+      <tbody>
+        <tr><td>The SDLC is a structured approach to software creation. Key phases include:<br><br>
+          <strong>1. Requirement Analysis</strong><br><br>
+          <table><thead><tr><td>Understanding the needs of the end-users and stakeholders</td></tr></thead></table>
+          <table><thead><tr><td>Produces a detailed list of software features, functionalities, and specifications.</td></tr></thead></table>
+        </td></tr>
+
+        <tr><td><strong>2. System Design</strong><br><br>
+          <table><thead><tr><td>Architects and designers create models and designs for the system.</td></tr></thead></table>
+          <table><thead><tr><td>Establishes a blueprint for the system's structure, UI, database, and interactions.</td></tr></thead></table>
+        </td></tr>
+
+        <tr><td><strong>3. Implementation (Coding)</strong><br><br>
+          <table><thead><tr><td>Developers write the actual code based on the design specifications.</td></tr></thead></table>
+          <table><thead><tr><td>Follows coding standards and often uses version control systems (e.g., Git).</td></tr></thead></table>
+        </td></tr>
+
+        <tr><td><strong>4. Testing</strong><br><br>
+          <table><thead><tr><td>Ensures the software works as intended, is bug-free, and meets requirements.</td></tr></thead></table>
+          <table><thead><tr><td>Common methods include unit testing, integration testing, and user acceptance testing.</td></tr></thead></table>
+        </td></tr>
+
+        <tr><td><strong>5. Deployment</strong><br><br>
+          <table><thead><tr><td>The software is released to production or the end-users.</td></tr></thead></table>
+          <table><thead><tr><td>May involve setting up hosting, environment configuration, and releasing updates.</td></tr></thead></table>
+        </td></tr>
+
+        <tr><td><strong>6. Maintenance</strong><br><br>
+          <table><thead><tr><td>Includes updating software, fixing bugs, and adding new features over time.</td></tr></thead></table>
+          <table><thead><tr><td>Ensures long-term usability and performance of the application.</td></tr></thead></table>
+        </td></tr>
+      </tbody>
+      
+    </table>
+ 
+</section>
+</center>    
+</main>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>
