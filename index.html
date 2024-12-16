@@ -1,277 +1,127 @@
 <!-- Code Copyright 2024 Kyubiks Label (Note App) -->
 <!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
 <!-- App Developed For (SCTI B.TechEd and IT) Semester -->
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCTI B.TechEd Notes (Kyubiks)</title>
-    <link rel="stylesheet" href="StyleCode/style.css" />
-    <link rel="icon" type="image/png" href="image/logo.png">
-</head>
+<title>SCTI B.TechEd Notes (Kyubiks)</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="Sem1/Kyubiks/image/logo.png">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<body onload="setTimeout(function(){window.location ='Sem1/Subject.html';}, 3000)">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
 
-<script>
-
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+<style>
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-});
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+        
+body {
+    background-color:black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+        
+header {
+    margin-bottom: 0px;
+}
+        
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+        
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color:black;
+    animation: fadeIn 2s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
 
-//code for hide link and show
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.toggle-link');
-    links.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent the default link behavior
-            const description = this.nextElementSibling;
-            if (description.style.display === 'none' || description.style.display) {
-                description.style.display = 'block';
-            } else {
-                description.style.display = 'none';
-            }
-        });
-    });
-});
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    color:black;
+    animation: fadeIn 2s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
+        
+main {
+    font-size: 24px;
+    font-weight: 500;
+    animation: slideIn 1.5s ease-in-out 1s;
+    animation-fill-mode: both;
+}
+        
+.intro p {
+    margin: 10px 0;
+    color:black;
+}
+        
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+        
+    main {
+        font-size: 18px;
+    }
+}
 
-</script>
-<body>
-<header id="mainHeader">
-    <nav id="mainNav">
-        <a href="index.html">T</a>
-        <a href="programingc.html">{C}</a>
-        <a href="math.html">M</a>
-        <a href="softwaredevelopment.html">(S)</a>
-        <a href="informationsystem.html">I</a>
-        <a href="professional.html">!P</a>
-        <a href="principles.html">*P</a>
-        <a href="./nextpage/subjectname.html">⭕️</a>
-     </nav>
- 
-</header>
-
-<main>
-<center>
-    <h1>Teaching Profession</h1>
-    <section id="one">
-        <h3>Historical Roots of The Teaching Professoion in Nepal and India</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Vedic Period (Gurukula System)</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Students lived with a guru , learning scriptures philosophy and life skill </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Buddhist Influence:</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Monasteries become centers of learning focusing on philosophy and debate, attracting
-                        international students.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Medieval Era</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hindu pathashalas and islamic madrasas taugh religious and secular subjects, fostering a 
-                        diverse educational culture.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Colonial Period</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>British introduced western education fomalized teacher training, and sidelined traditional
-                        knowledge system.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Post - Independence</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>India and Nepal expanded education promoted literacy and established training institutions,
-                        emphasing professionalism.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Modern Era</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Focus on technology, digital literacy, and improved teacher training, adapting to contemporary
-                        educational needs.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-       
-        <br>
-        <h3>Teachers in classical and modern times Nepal and India</h3>
-        <h2>(Classical Period)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Gurukula System</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Gurus taught students in close mentorship focusing on scriptures, philosophy, and life skills.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Buddhist Monasteries</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Monks taught at centers like Nalanda, emphasizing logic, ethics, and debate.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Medieval Era</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hindi pathashalas and islamic madrasas taught religion, philosophy, and math Teachers
-                        were respected community figures.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>(Modern Period)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Colonial Era</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>British Influence introduced formal teacher training and western subject, teachers shifted
-                        to structured curricula.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Post - Independence</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Emphasis on teacher training to expand literacy and education access in both urban and rural
-                        areas.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Contemporary Era</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Teachers now balance traditional methods with digital tools, adapting to diverse students
-                        needs in the digital age.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-       <br>
-       <h3>Teachers as Expert Facilitators and change Agents in Nepal and India</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Expert Facilitors</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>- Faster holistic learning and critical thinking</td></tr>
-                <tr><td>- Use student - centered approaches blending traditional and modern methoad</td></tr>
-                </tr><td>- Make learning inclusive and relevant to local context</td></tr>
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th><u>Change Agents</u></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>- Promote literacy and equility, especially in remote areas.</td></tr>
-                <tr><td>- Inspire social awareness on issues like gender equility and enviroment.</td></tr>
-                </tr><td>- Embrace technology to enhance education and life long learning</td></tr>
-            </tbody>
-        </table>
-
-</section>
-</center>
-
-</main>
- <script src="script.js"></script>
-</body>
+@media (max-width: 250px) {
+    h2 {
+        font-size: 36px;
+    }
+        
+    main {
+        font-size: 18px;
+    }
+}
+        
+        </style>
+        <body>
+            <header>
+                <img src="Sem1/Kyubiks/image/logo.png" alt="School Logo" class="logo animated">
+                <h1 class="animated">SCTI B.TechEd<br>BIT And IT</h1>
+                <br>
+                <h2 class="animated">App For (Student) Note</h2>
+                <h2 class="animated">Developed By Kyubiks</h2>
+            </header>
+            <main>
+                <div class="intro animated">
+                    <br>
+                </div>
+            </main>
 </html>
