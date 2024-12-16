@@ -1,0 +1,97 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="../Kyubiks/StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="../Kyubiks/image/logo.png">
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <a href="../Kyubiks/Kyubiks.html">Kyubiks</a>
+        <a href="../Kyubiks/onlineshop.html">Online Shop</a>
+        <a href="subject.html">Subject</label></a>
+        <a href="../Kyubiks/sem1.html"><label style="color:red;">Sem1</label></a>
+    </nav>
+ </header>
+
+ <!-- Bottom Fixed Navigation -->
+ <div id="bottomNav">
+    <a href="#"><label style="color:green;">Note</label></a>
+    <a href="content.html">Content</a>
+    <a href="assign.html">Assign</a>
+    <a href="syllabus.html">Syllabus</a>
+  </div>
+
+<main>
+<center>
+    <h1>Professional Issues in IS Practices</h1>
+    <section id="one">
+        <table>
+            <thead>
+                <tr><th>Features Of Management</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1) Goals Oriented</td></tr>
+                <tr><td>2) Multi - Dimensional</td></tr>
+                <tr><td>3) Continous Process</td></tr>
+                <tr><td>4) People Oriented</td></tr>
+                <tr><td>5) Universal Application</td></tr>
+            </tbody>
+        </table>
+       
+        <br>
+        <table>
+            <thead>
+                <tr><th>Importance of Management</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1) Achievements of Goals</td></tr>
+                <tr><td>2) Optimum Resorces Utilization</td></tr>
+                <tr><td>3) Decision - Making</td></tr>
+                <tr><td>4) Cordination</td></tr>
+                <tr><td>5) Adaption To Change</td></tr>
+                <tr><td>6) Employee Motive & Development</td></tr>
+                
+            </tbody>
+        </table>
+
+</section>
+</center>
+
+</main>
+<br><br><br><br>
+<script>
+  let lastScrollTop = 0; // Store the last scroll position
+  const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+  // Add scroll event listener to hide or show the top navigation
+  window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // If the user scrolls down, hide the top navbar
+    if (currentScroll > lastScrollTop) {
+      navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+    } else {
+      // If the user scrolls up, show the top navbar
+      navbar.style.top = "0"; // Shows the top navbar
+    }
+
+    // Add class to change the navbar background color when scrolled
+    if (currentScroll > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+  });
+</script>
+</body>
+</html>
