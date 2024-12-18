@@ -22,109 +22,107 @@
   </header>
 
 <main>
+
+<!-- Bottom Fixed Navigation -->
+<div id="bottomNav">
+    <a href="#"><label style="color:green;">News</label></a>
+    <a href="rotine.html">Routine</a>
+    <a href="student.html">Student</a>
+    <a href="nextsem.html">NextSem</a>
+    
+  </div>
+
 <center>
-    <h1>2081 Sem 1 Students</h1>
+  <h1>Semester 1 (News)</h1>
     <section id="one">
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>15 Student Name</th>
-                    <th>Phone Number</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Alish Shrestha</td>
-                    <td>9819697217</td>
-                </tr>
-
-                <tr>
-                    <td>Amrit Syangtang</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>Anish Bk </td>
-                    <td>9827872821</td>
-                </tr>
-
-                <tr>
-                    <td>Arpan Shrestha</td>
-                    <td>9766474593</td>
-                </tr>
-
-                <tr>
-                    <td>Bibek Saru Magar</td>
-                    <td>9817841997</td>
-                </tr>
-
-                <tr>
-                    <td>Binav Kumar Sasankar</td>
-                    <td></td>
-            </tr>
-
+    <h1>Countdown For Exam (Jan2)</h1>
+    
+    <table>
+        <thead>
             <tr>
-                <td>Dev Naryan Shrestha</td>
-                <td>9707930291</td>
+                <th>Days</th>
+                <th>Hours</th>
+                <th>Minutes</th>
+                <th>Seconds</th>
             </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span id="days" class="time-unit">0</span></td>
+            <td><span id="hours" class="time-unit">0</span></td>
+            <td><span id="minutes" class="time-unit">0</span></td>
+            <td><span id="seconds" class="time-unit">0</span></td>
+        </tr>
+    </tbody>
+</table>
 
-            <tr>
-                <td>Dil Narayan Shrestha</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Manoj Kumar Bal</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Pranya Shrestha</td>
-                <td>9741665912</td>
-            </tr>
-
-            <tr>
-                <td>Roshan Thapa</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Sabin Bhujel</td>
-                <td>9817670440</td>
-            </tr>
-
-            <tr>
-                <td>Sandesh Syangtan</td>
-                <td>9804884169</td>
-            </tr>
-
-            <tr>
-                <td>Shreya Bhandari</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Sudan Shu Basnet</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Bishal Karki</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Suil Bishowkarma</td>
-                <td></td>
-            </tr>
-                
-            </tbody>
-        </table>
+<br>
+<table>
+  <thead><tr><th><center><label style="color:red;">Announcement: (From Semester 6)</label></center><br>Name Submission for Welcome Program</th></tr></thead>
+  <tbody><tr><td>Semester 6 is organizing a Welcome Program for Semester 1 students.<br><br>
+    If you have talents in dancing, singing, or any other extracurricular skills, we encourage you to participate!<br><br>
+    Kindly submit your name and details to Semester 6 representatives. The date for the Welcome Program will be announced soon.<br><br>
+    We look forward to showcasing your talents and making this event a memorable one!<br><br>
+    Thank you!<br>
+  </td></tr></tbody>
+</table>
+    
 </section>
 </center>
+<!--Code For Coutdown-->
+<script>
+    function countdown() {
+        const targetDate = new Date(new Date().getFullYear() + 1, 0, 2); // January 2 of the next year
+        const now = new Date();
+        const diff = targetDate - now;
+
+        if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        } else {
+            document.querySelector("table").innerHTML = "<tr><td colspan='4'>Happy January 2!</td></tr>";
+        }
+    }
+
+    setInterval(countdown, 1000);
+    countdown();
+</script>
 
 </main>
- <script src="script.js"></script>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
 </body>
 </html>
