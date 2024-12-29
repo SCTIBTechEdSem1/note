@@ -56,19 +56,8 @@
     </tbody>
 </table>
 
-<br>
-<table>
-  <thead><tr><th><center><label style="color:red;">Announcement: (From Semester 6)</label></center><br>Name {Submission for Welcome Program}</th></tr></thead>
-  <tbody><tr><td>Semester 6 is organizing a Welcome Program for Semester 1 students.<br><br>
-    If you have talents in dancing, singing, or any other extracurricular skills, we encourage you to participate!<br><br>
-    Kindly submit your name and details to Semester 6 representatives. The date for the Welcome Program will be announced soon.<br><br>
-    We look forward to showcasing your talents and making this event a memorable one!<br><br>
-    Thank you!<br>
-  </td></tr></tbody>
-</table>
-    
-</section>
-</center>
+
+
 <!--Code For Coutdown-->
 <script>
     function countdown() {
@@ -95,7 +84,45 @@
     countdown();
 </script>
 
+<br><br>
+
+<!--Code For Welcome Program-->
+<table id="specialTable">
+  <thead>
+      <tr>
+          <th><center><label style="color:red;">Announcement: (From Semester 6)</label> <br><br> Wellcome Program Today!</center></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr><td>Welcome to this special day! <br> <br> Today is the Welcome Program, especially for Semester 1 B.Tech Ed students. <br><br>
+        If you can sing or dance, we’d love for you to perform and make the event even more fun. <br><br> One student from Semester 1 has to give a lovely speech. <br><br>
+        The program starts at 11:00 AM. Boys, please wear your formal uniform, and girls, come beautifully dressed in sarees. <br><br>
+        Let’s make this a wonderful day filled with joy and excitement! (make this like notice)<br><br>
+        Thank You!</td></tr>
+  </tbody>
+</table>
+
+<!--Css Code For Auto Date Publish Dec 30 -->
+<style>
+  #specialTable {
+      display: none;
+  }
+</style>
+<!--Java Script Code For Auto Date Publish Dec 30 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const currentDate = new Date();
+      const targetDate = new Date(currentDate.getFullYear(), 11, 30); // 11 = December
+
+      if (currentDate.toDateString() === targetDate.toDateString()) {
+          document.getElementById('specialTable').style.display = 'table';
+      }
+  });
+</script>
+</center>
+</section>
 </main>
+
 <br><br><br><br>
  
   <script>
