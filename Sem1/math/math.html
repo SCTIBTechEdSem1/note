@@ -251,6 +251,80 @@
             </tbody>
         </table>
 
+        <!--Code For Venn Diagram-->
+        <style>
+            fieldset {
+                width: 250px; /* Adjusted width for rectangle */
+                height: 160px; /* Adjusted height for rectangle */
+                margin: 20px auto;
+                position: relative;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0; /* Removed rounded corners to make it rectangular */
+                flex-direction: column; /* Stack the content vertically */
+                text-align:right; /* Align legend text to the left */
+                border: 2px solid black; 
+            }
+    
+            legend {
+                align-self: flex-end; /* Align the legend to the right */
+                margin-bottom: 10px; /* Space between legend and content */
+                font-weight: bold;
+            }
+    
+            .universal {
+                position: relative;
+                width: 250px; /* Adjusted width to fit the larger circles */
+                height: 200px; /* Adjusted height to fit the larger circles */
+            }
+    
+            .circle {
+                position: absolute;
+                width: 120px; /* Increased circle size */
+                height: 120px; /* Increased circle size */
+                border-radius: 50%;
+                border: 2px solid black;
+            }
+    
+            .circle.a {
+                left: - 0; /* Position circle A */
+            }
+    
+            .circle.b {
+                left: 60px; /* Adjusted position for overlap */
+            }
+    
+            .text {
+                position: absolute;
+                font-size: 14px;
+            }
+    
+            .text.a { left: 30px; top: 40px; } /* "a" inside A */
+            .text.b { left: 30px; top: 70px; } /* "b" inside A */
+            .text.c { left: 85px; top: 50px; } /* "c" in overlap */
+            .text.d { left: 140px; top: 34px; } /* "d" inside B */
+            .text.e { left: 140px; top: 55px; } /* "e" inside B */
+            .text.f { left: 140px; top: 74px; } /* "f" inside B */
+            .text.h { left: 230px; top: 120px; } /* "h" outside circles */
+            .text.g { left: 200px; top: 120px; } /* "g" outside circles */
+    
+            .label-a {
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                font-weight: bold;
+            }
+    
+            .label-b {
+                position: absolute;
+                top: 1px;
+                left: 170px;
+                font-weight: bold;
+            }
+        </style>
+
         <br>
         <table>
             <thead>
@@ -271,13 +345,364 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { a, b, c, d, e, f, g, h } - {a , b, c, d, e, f,}<br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = { g, h }
 
-
+                <fieldset>
+                    <legend>U</legend>
+                    <div class="universal">
+                        <div class="circle a"></div>
+                        <div class="circle b"></div>
+                        <div class="label-a">A</div>
+                        <div class="label-b">B</div>
             
-            </td></tr>
-                
+                        <!-- Text inside the diagram -->
+                        <div class="text a">a</div>
+                        <div class="text b">b</div>
+                        <div class="text c">c</div>
+                        <div class="text d">d</div>
+                        <div class="text e">e</div>
+                        <div class="text f">f</div>
+                        <div class="text h">h,</div>
+                        <div class="text g">g,</div>
+                    </div>
+                </fieldset>
+            </td></tr>                
             </tbody>
-        </table>
+        </table><br>
 
+        <table>
+            <thead>
+              <tr><th>2) Cardinal Numbers of Sets</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>1.If sets A and B are disjoint then</strong> <br><br>
+                    (i) &#8745; (AUB) = &#8745; (A) + &#8745; (B)<br><br>
+                    (ii) = &#8745; (U) = &#8745; (AUB) + &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+                </td></tr>
+
+                <tr><td><strong>2.If Sets A and B are Overlapping Set's Then</strong><br>
+                (i) &#8745; (AUB) = &#8745;<sub>o</sub> (A) + &#8745; (A&#8745;B) + &#8745;<sub>o</sub> (B)<br>
+
+                <style>
+
+                    .text.left { left: 12px; top: 50px; } 
+                    .text.middle { left: 65px; top: 50px; }
+                    .text.right { left: 130px; top: 55px; } 
+                    .text.outside { left: 180px; top: 120px; } 
+                </style>
+
+                <fieldset>
+                    <legend>U</legend>
+                    <div class="universal">
+                        <div class="circle a"></div>
+                        <div class="circle b"></div>
+                        <div class="label-a">A</div>
+                        <div class="label-b">B</div>
+            
+                        <!-- Text inside the diagram -->
+                        <div class="text left">&#8745;<sub>o</sub>(A)</div>
+                        <div class="text middle">&#8745;(AUB)</div>
+                        <div class="text right">&#8745;<sub>o</sub>(B)</div>
+                        <div class="text outside">&#8745;(<span class="upper-underline">AUB</span>)</div>
+                    </div>
+                </fieldset>
+                <br>
+
+                (ii) &#8745; (U) = &#8745; (AUB) + &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+                (iii) &#8745; (AUB) = &#8745; (A) + &#8745; (B) - &#8745; (AUB)<br><br>
+                (iv) &#8745; (<span class="upper-underline">A</span>) = &#8745; (U) - &#8745; (A)<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8745; (<span class="upper-underline">B</span>) = &#8745; (U) - &#8745; (B)<br><br>
+                (v) &#8745;<sub>o</sub> (A) = &#8745; (A) - &#8745; (A&#8745;B)<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8745;<sub>o</sub> (B) = &#8745; (B) - &#8745; (A&#8745;B)<br><br>
+            </td></tr>
+            </tbody>
+          </table><br>
+
+          <table>
+            <thead>
+              <tr><th>3) If Sets A, B and C are Overlapping Sets then,</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>i) &#8745; (U) = &#8745; (AUBUC) + &#8745; (<span class="upper-underline">AUBUC</span>)
+                    <style>
+                    .fieldset3 {
+                        width: 250px; /* Adjusted width for rectangle */
+                        height: 200px; /* Adjusted height for rectangle */
+                        margin: 20px auto;
+                        position: relative;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0; /* Removed rounded corners to make it rectangular */
+                        flex-direction: column; /* Stack the content vertically */
+                        text-align:right; /* Align legend text to the left */
+                        border: 2px solid black; 
+                    }
+                        .label-c {
+                            position: absolute;
+                            top: 160px;
+                            left: 31px;
+                            font-weight: bold;
+                        }
+
+                        .circle.c {
+                            top: 55px;
+                            left:30px; /* Adjusted position for overlap with circle B */
+                        }
+
+                        .text.left3 { left: 10px; top: 40px; } 
+                        .text.middle3 { left: 50px; top: 95px; } 
+                        .text.right3 { left: 75px; top: 30px; }
+                        .text.down3 { left: 125px; top: 90px; } 
+
+                    </style>
+                    <fieldset class="fieldset3">
+                        <legend>U</legend>
+                        <div class="universal">
+                         <div class="circle a"></div>
+                         <div class="circle b"></div>
+                         <div class="circle c"></div>
+                         <div class="label-a">A</div>
+                         <div class="label-b">B</div>
+                         <div class="label-c">C</div>
+
+                        <!-- Text inside the diagram -->
+                        <div class="text left3">• &#8745;<sub>o</sub>(A)</div>
+                        <div class="text middle3">• &#8745;<sub>o</sub>(A&#8745;C)</div>
+                        <div class="text right3">• &#8745;<sub>o</sub>(A&#8745;B)</div>
+                        <div class="text down3">• &#8745;(A&#8745;B&#8745;C)</div>
+                    </div>
+                </fieldset>
+
+                (ii) &#8745; (AUBUC) = &#8745; (A) + &#8745; (B) + &#8745; (C) - &#8745; (A&#8745;B) - &#8745; (B&#8745;C) - &#8745; (A&#8745;C) + &#8745; (AUBUC) <br><br>
+
+                (iii) &#8745; (A) = &#8745;<sub>o</sub> (A) + &#8745;<sub>o</sub> (A&#8745;B) + &#8745;<sub>o</sub> (A&#8745;C) + &#8745; (A&#8745;B&#8745;C)
+
+                <fieldset class="fieldset3">
+                    <legend>U</legend>
+                    <div class="universal">
+                     <div class="circle a"></div>
+                     <div class="circle b"></div>
+                     <div class="circle c"></div>
+                     <div class="label-a">A</div>
+                     <div class="label-b">B</div>
+                     <div class="label-c">C</div>
+
+                    <!-- Text inside the diagram -->
+                    <div class="text left3"></div>
+                    <div class="text middle3"></div>
+                    <div class="text right3"></div>
+                    <div class="text down3"></div>
+                </div>
+            </fieldset>
+            </td></tr>
+            </tbody>
+          </table><br>
+
+          <table>
+            <thead>
+              <tr><th>Question No.1</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>If &#8745; (U) = 200, &#8745; (A) = 85, &#8745; (B) = 60, &#8745; (AUB) = 100 then,<br><br>
+                Find &#8745; (A&#8745;B), &#8745; (A-B) And &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+            Solution here,<br><br>
+            We know that<br><br>
+            &#8745; (AUB) = &#8745;(A) + &#8745; (B) - &#8745; (A&#8745;B)<br><br>
+            or, 100 = 85 + 60 - &#8745; (A&#8745;B)<br><br>
+            or, 100 = 145 - &#8745; (A&#8745;B)<br><br>
+            or, 100 - 145 = - &#8745; (A&#8745;B)<br><br>
+            or, - 45 = - &#8745; (A&#8745;B)<br><br>
+            45 = &#8745; (A&#8745;B)<br><br>
+            Therefore, &#8745; (A&#8745;B) = 45<br><br><br>
+
+            Again,<br><br>
+            &#8745; (A - B) = &#8745;<sub>o</sub> (A)<br><br>
+            = &#8745; (A) - &#8745; (A&#8745;B)<br><br>
+            = 85 - 45<br><br>
+            = 40<br><br><br>
+
+            At Last,<br><br>
+            &#8745; (A<span class="upper-underline">U</span>B) = &#8745; (U) - &#8745;(AUB)<br><br>
+            = 200 - 100<br><br>
+            = 100<br><br>
+        </td></tr>
+            </tbody>
+          </table><br>
+
+          <table>
+            <thead>
+              <tr><th>Question No.2</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>In a certain town in nepal all people read magazine A or magazine B or both IF 60% send magazine A and 50% read magazine B then
+                     How many read both magazine<br><br>
+                    Soln here,<br><br>
+                    &#8745; (U) = 100%<br><br>
+                    &#8745; (A) = 60%<br><br>
+                    &#8745; (B) = 50%<br><br>
+                    &#8745; (<span class="upper-underline">AUB</span>) = 0 <br><br>
+                    we know that, <br><br>
+                    &#8745; (U) = &#8745; (AUB) = &#8745; (A) + &#8745; (B) + &#8745; (A&#8745;B) + &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+                    or, 100% = 60% 50% - &#8745; (A&#8745;B) + 0 <br><br>
+                    or, 100% = 110% - &#8745; (A&#8745;B)<br><br>
+                    or, &#8745; (A&#8745;B) = 10% 
+
+                    <style>   
+                            .text.left2 { left: 20px; top: 50px; } 
+                            .text.middle2 { left: 80px; top: 50px; }
+                            .text.right2 { left: 140px; top: 50px; }
+                            .text.buttom2 { left: 220px; top: 120px; } 
+    
+                        </style>
+                        <fieldset class="fieldset">
+                            <legend>U</legend>
+                            <div class="universal">
+                             <div class="circle a"></div>
+                             <div class="circle b"></div>
+                             <div class="label-a">A</div>
+                             <div class="label-b">B</div>
+    
+                            <!-- Text inside the diagram -->
+                            <div class="text left2">50%</div>
+                            <div class="text middle2">10%</div>
+                            <div class="text right2">40%</div>
+                            <div class="text buttom2">0%</div>
+                        </div>
+                    </fieldset>
+
+                </td></tr>
+            </tbody>
+          </table><br>
+
+          <table>
+            <thead>
+              <tr><th>Question No.3</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>In a city of 26000 population, 5000 read English Newspaper, 12000 read Nepali Newspaper and 1000 read both,<br><br>
+                What percentage read neither English nor Nepali.<br><br>
+                soln here,<br><br>
+                &#8745; (U) = 26000<br><br>
+                &#8745; (A) = 5000<br><br>
+                &#8745; (B) = 12000<br><br>
+                &#8745; (A&#8745;B) = 1000<br><br>
+
+                we knowt that,<br><br>
+                &#8745; (U) = &#8745; (A) + &#8745; (B) - &#8745; (A&#8745;B) + &#8745; (A<span class="upper-underline">U</span>B)<br><br>
+                or, 26000 = 5000 + 12000 + 1200 - 1000 + &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+                or, 27000 = 5000 + 1200 - 1000 + &#8745; (<span class="upper-underline">AUB</span>)<br><br>
+                or, 27000 - 17000 = &#8745; (<span class="upper-underline">A&#8745;B</span>)<br><br>
+                or, 10,000 - &#8745; (<span class="upper-underline">AUB</span>)<br><br><br>
+
+                percentage of read neither English nor Nepali = 10,000 / 26,000 x 100% <br><br>
+                Ans = 38.46% <br><br>
+            </td></tr>
+            </tbody>
+          </table><br>
+
+          <table>
+            <thead>
+              <tr><th>Question No.1</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>In an examination conducted by  T.U 55% Failed in English, 35% failed in Account and 30% failed in Economics. 16% failed in 
+                    English and Economics, 10% failed in Economics and Account 15% Failed in English and Account 7% failed in all Subject. Find<br><br>
+                    i) Pass percentage in all Subjects<br><br>
+                    ii) Fail percentage in One Subject<br><br>
+                    iii) The fail percentage in exactly two subject<br><br>
+                    Soln given,<br><br>
+                    let &#8745; (A) = Set of student who failed in English<br><br>
+                    &#8745; (B) = No of student who failed in Account.<br><br>
+                    &#8745; (c) = No of students who failed in Economics<br><br>
+                    &#8745; (A) = 55%<br><br>
+                    &#8745; (B) = 35%<br><br>
+                    &#8745; (C) = 30%<br><br>
+                    &#8745; (A&#8745;C) = 16%<br><br>
+                    &#8745; (B&#8745;C) = 10%<br><br>
+                    &#8745; (A&#8745;B) = 15%<br><br>
+                    &#8745; (A&#8745;B&#8745;C) = 7%
+
+                    <style>
+                        .fieldset3 {
+                            width: 250px; /* Adjusted width for rectangle */
+                            height: 200px; /* Adjusted height for rectangle */
+                            margin: 20px auto;
+                            position: relative;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 0; /* Removed rounded corners to make it rectangular */
+                            flex-direction: column; /* Stack the content vertically */
+                            text-align:right; /* Align legend text to the left */
+                            border: 2px solid black; 
+                        }
+                            .label-c {
+                                position: absolute;
+                                top: 160px;
+                                left: 31px;
+                                font-weight: bold;
+                            }
+    
+                            .circle.c {
+                                top: 55px;
+                                left:30px; /* Adjusted position for overlap with circle B */
+                            }
+    
+                            .text.left3 { left: 20px; top: 40px; }
+                            .text.left3half { left: 45px; top: 90px; } 
+                            .text.middle3 { left: 80px; top: 30px; }
+                            .text.middle3half { left: 85px; top: 70px; } 
+                            .text.right3 { left:135px; top: 40px; } 
+                            .text.right3half { left: 120px; top: 95px; } 
+                            .text.down3 { left: 80px; top: 140px; } 
+                            .text.down3out { left: 180px; top: 150px; }
+    
+                        </style>
+                        <fieldset class="fieldset3">
+                            <legend>U</legend>
+                            <div class="universal">
+                             <div class="circle a"></div>
+                             <div class="circle b"></div>
+                             <div class="circle c"></div>
+                             <div class="label-a">A</div>
+                             <div class="label-b">B</div>
+                             <div class="label-c">C</div>
+    
+                            <!-- Text inside the diagram -->
+                            <div class="text left3">31%</div>
+                            <div class="text left3half">9%</div>
+                            <div class="text middle3">8%</div>
+                            <div class="text middle3half">7%</div>
+                            <div class="text right3">17%</div>
+                            <div class="text right3half">3%</div>
+                            <div class="text down3">11%</div>
+                            <div class="text down3out">14%</div>
+                        </div>
+                    </fieldset>
+                    i) &#8745; (U) = &#8745; (AUBUC) + &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    &#8745; (U) = &#8745; (A) + &#8745; (B) + &#8745; (C) - &#8745; (A&#8745;B)<br><br>
+                    &#8745; (B&#8745;C) + &#8745; (A&#8745;B&#8745;C) + &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    or, 100% = 55% + 35% + 130% - 15% - 16% - 10% + 7% + &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    or, 100% = 127% - 41% + &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    or, 100% = 86 + &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    or, 14% = &#8745; (<span class="upper-underline">AUBUC</span>)<br><br>
+                    Therefore, Pass Percentage = 14% <br><br><br>
+
+                    ii) Failed Percentage in One Subject<br><br>
+                    = &#8745;<sub>o</sub> (A) + &#8745;<sub>o</sub> (B) + &#8745;<sub>o</sub> (C)<br><br>
+                    = 31% + 17% + 11%<br><br>
+                    = 59%<br><br><br>
+
+                    iii) Failed in Exactly Two Subject<br><br>
+                    = &#8745;<sub>o</sub> (A&#8745;B) + &#8745;<sub>o</sub> (A&#8745;C) + &#8745;<sub>o</sub> (B&#8745;C)<br><br>
+                    = 8% + 9% + 13%<br><br>
+                    = 20%
+                </td></tr>
+            </tbody>
+          </table><br>
+
+          <table><thead><tr><th><center><label style="color:red">More Note Comming Soon.</label></center></th></tr></thead></table><br>
 </section>
 </center>
 
