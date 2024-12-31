@@ -60,28 +60,34 @@
 
 <!--Code For Coutdown-->
 <script>
-    function countdown() {
-        const targetDate = new Date(new Date().getFullYear() + 1, 0, 5); // January 2 of the next year
-        const now = new Date();
-        const diff = targetDate - now;
+function countdown() {
+  const now = new Date();
+  const targetDate = new Date(now.getFullYear() + 1, 0, 5); // January 5th of next year
 
-        if (diff > 0) {
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  // If today's date is after January 5th of this year, adjust the target date to the next year
+  if (now.getMonth() === 0 && now.getDate() <= 5) {
+      targetDate.setFullYear(now.getFullYear());
+  }
 
-            document.getElementById("days").textContent = days;
-            document.getElementById("hours").textContent = hours;
-            document.getElementById("minutes").textContent = minutes;
-            document.getElementById("seconds").textContent = seconds;
-        } else {
-            document.querySelector("table").innerHTML = "<tr><td colspan='4'>Today Is Your Exam</td></tr>";
-        }
-    }
+  const diff = targetDate - now;
 
-    setInterval(countdown, 1000);
-    countdown();
+  if (diff > 0) {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+  } else {
+      document.querySelector("table").innerHTML = "<tr><td colspan='4'>Today Is Your Exam</td></tr>";
+  }
+}
+
+setInterval(countdown, 1000);
+countdown();
 </script>
 
 <br><br>
