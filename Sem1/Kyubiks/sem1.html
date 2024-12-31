@@ -35,7 +35,7 @@
 <center>
   <h1>Semester 1 (News)</h1>
     <section id="one">
-    <h1>Countdown For Exam (Jan2)</h1>
+    <h1>Countdown For Exam (Jan 5)</h1>
     
     <table>
         <thead>
@@ -61,7 +61,7 @@
 <!--Code For Coutdown-->
 <script>
     function countdown() {
-        const targetDate = new Date(new Date().getFullYear() + 1, 0, 2); // January 2 of the next year
+        const targetDate = new Date(new Date().getFullYear() + 1, 0, 5); // January 2 of the next year
         const now = new Date();
         const diff = targetDate - now;
 
@@ -76,7 +76,7 @@
             document.getElementById("minutes").textContent = minutes;
             document.getElementById("seconds").textContent = seconds;
         } else {
-            document.querySelector("table").innerHTML = "<tr><td colspan='4'>Happy January 2!</td></tr>";
+            document.querySelector("table").innerHTML = "<tr><td colspan='4'>Today Is Your Exam</td></tr>";
         }
     }
 
