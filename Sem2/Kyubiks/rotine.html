@@ -1,0 +1,175 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <a href="Kyubiks.html">Kyubiks</a>
+        <a href="onlineshop.html">Online Shop</a>
+        <a href="../subject.html">Subject</a>
+        <a href="../subject.html"><label style="color:green;">sem2</label></a>    
+    </nav>
+  </header>
+
+<main>
+
+<!-- Bottom Fixed Navigation -->
+<div id="bottomNav">
+    <a href="sem1.html">News</a>
+    <a href="rotine.html"><label style="color:green;">Routine</label></a>
+    <a href="student.html">Student</a>
+    <a href="nextsem.html">NextSem</a>
+    
+  </div>
+
+<center>
+<h1>Subject Rotine</h1>
+<section id="one">
+    <h1>Subjects for Today</h1>
+    <table>
+        <thead>
+            <tr>
+                <th id="dayHeader">Day</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody id="subjectTable">
+            <!-- Dynamic content will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        const subjectsByDay = {
+            "Sunday": ["Teaching Profession", "Software Development", "Math"],
+            "Monday": ["Teaching Profession", "Software Development", "Math"],
+            "Tuesday": ["Principles and Methods of Technical Instruction", "Math"],
+            "Wednesday": ["Principles and Methods of Technical Instruction", "Information System"],
+            "Thursday": ["Computer Programming Using C", "Professional Issues in IS Practices"],
+            "Friday": ["Computer Programming Using C", "Professional Issues in IS Practices"],
+            "Saturday": ["No Classes"] // Add "No Classes" or empty for Saturday
+        };
+
+        function showTodaySubjects() {
+            const today = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const currentDay = days[today.getDay()];
+            const subjects = subjectsByDay[currentDay] || ["No Subjects Today"];
+
+            document.getElementById("dayHeader").textContent = currentDay;
+
+            const tableBody = document.getElementById("subjectTable");
+            tableBody.innerHTML = subjects.map((subject, index) => `
+                <tr>
+                    <td>Period ${index + 1}</td>
+                    <td>${subject}</td>
+                </tr>
+            `).join("");
+        }
+
+        showTodaySubjects();
+    </script>
+
+<br>
+<br>
+<h1>All Subject Rotine</h1>
+<table><thead><thead><tr><th><center>Sunday</center></th></tr></thead>
+  <tbody>
+    <tr><td>Teching Profession</td></tr>
+    <tr><td>Software Develoment</td></tr>
+    <tr><td>Math</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+
+<table><thead><thead><tr><th><center>Monday</center></th></tr></thead>
+  <tbody>
+    <tr><td>Teching Profession</td></tr>
+    <tr><td>Software Develoment</td></tr>
+    <tr><td>Math</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+
+<table><thead><thead><tr><th><center>Tuesday</center></th></tr></thead>
+  <tbody>
+    <tr><td>Principles and Methods of Technical Instruction</td></tr>
+    <tr><td>Software Develoment</td></tr>
+    <tr><td>Math</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+
+<table><thead><thead><tr><th><center>Wednesday</center></th></tr></thead>
+  <tbody>
+    <tr><td>Principles and Methods of Technical Instruction</td></tr>
+    <tr><td>Information System (2 Period)</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+
+<table><thead><thead><tr><th><center>Thursday</center></th></tr></thead>
+  <tbody>
+    <tr><td>Computer Programing Using C (2 Period)</td></tr>
+    <tr><td>Professional Issues in IS Practies</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+
+<table><thead><thead><tr><th><center>Friday (Start Class From 7:00)</center></th></tr></thead>
+  <tbody>
+    <tr><td>Computer Programing Using C</td></tr>
+    <tr><td>Professional Issues in IS Practies</td></tr>
+  </tbody>
+</thead>
+</table>
+<br>
+   
+</section>
+</center>
+
+</main>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <a href="Kyubiks.html">Kyubiks</a>
+        <a href="onlineshop.html">Online Shop</a>
+        <a href="../subject.html">Subject</a>
+        <a href="../subject.html"><label style="color:green;">sem2</label></a>    
+    </nav>
+  </header>
+
+<main>
+
+<!-- Bottom Fixed Navigation -->
+<div id="bottomNav">
+    <a href="#"><label style="color:green;">News</label></a>
+    <a href="rotine.html">Routine</a>
+    <a href="student.html">Student</a>
+    <a href="nextsem.html">NextSem</a>
+    
+  </div>
+
+<center>
+  <h1>Semester 1 (News)</h1>
+    <section id="one">
+<!--
+    <h1>Countdown For (25 Mark Exam) Starting (Jan 5) </h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+                <th>Minutes</th>
+                <th>Seconds</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span id="days" class="time-unit">0</span></td>
+            <td><span id="hours" class="time-unit">0</span></td>
+            <td><span id="minutes" class="time-unit">0</span></td>
+            <td><span id="seconds" class="time-unit">0</span></td>
+        </tr>
+    </tbody>
+</table><br>
+-->
+
+<!--Code For Coutdown Exam-->
+<!--
+<script>
+function countdown() {
+  const now = new Date();
+  const targetDate = new Date(now.getFullYear() + 1, 0, 5); // January 5th of next year
+
+  // If today's date is after January 5th of this year, adjust the target date to the next year
+  if (now.getMonth() === 0 && now.getDate() <= 5) {
+      targetDate.setFullYear(now.getFullYear());
+  }
+
+  const diff = targetDate - now;
+
+  if (diff > 0) {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+  } else {
+      document.querySelector("table").innerHTML = "<tr><td colspan='4'>Today Is Your Exam</td></tr>";
+  }
+}
+
+setInterval(countdown, 1000);
+countdown();
+</script>
+
+<br><br>
+-->
+
+
+<table><thead><tr><th><center>Exam Routine</center></th></tr></thead></table>
+<table>
+  <thead>
+    <tr>
+      <th>Date(Nepali)</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>21 (Sunday)</td>
+      <td>Computer Programing Using C</td>
+    </tr>
+
+    <tr>
+      <td>22 (Monday)</td>
+      <td>Professional Issues in IS Practies</td>
+    </tr>
+
+    <tr>
+      <td>23 (Tuesday)</td>
+      <td>Information System</td>
+    </tr>
+
+    <tr>
+      <td>24 (Wednesday)</td>
+      <td>Software Develoment</td>
+    </tr>
+
+    <tr>
+      <td>25 (Thursday)</td>
+      <td>Teching Profession</td>
+    </tr>
+
+    <tr>
+      <td>26 (Friday)</td>
+      <td>Math</td>
+    </tr>
+
+    <tr>
+      <td>28 (Sunday)</td>
+      <td>Principles and Methods of Technical Instruction</td>
+    </tr>
+
+  </tbody>
+</table> <br>
+
+
+
+
+
+<!--Code For Welcome Program-->
+<table id="specialTable">
+  <thead>
+      <tr>
+          <th><center><label style="color:red;">Announcement: (From Semester 6)</label> <br><br> Wellcome Program Today!</center></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr><td>Welcome to this special day! <br> <br> Today is the Welcome Program, especially for Semester 1 B.Tech Ed students. <br><br>
+        If you can sing or dance, we’d love for you to perform and make the event even more fun. <br><br> One student from Semester 1 has to give a lovely speech. <br><br>
+        The program starts at 11:00 AM. Boys, please wear your formal uniform, and girls, come beautifully dressed in sarees. <br><br>
+        Let’s make this a wonderful day filled with joy and excitement! (make this like notice)<br><br>
+        Thank You!</td></tr>
+  </tbody>
+</table>
+
+<!--Css Code For Auto Date Publish Dec 30 -->
+<style>
+  #specialTable {
+      display: none;
+  }
+</style>
+<!--Java Script Code For Auto Date Publish Dec 30 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const currentDate = new Date();
+      const targetDate = new Date(currentDate.getFullYear(), 11, 30); // 11 = December
+
+      if (currentDate.toDateString() === targetDate.toDateString()) {
+          document.getElementById('specialTable').style.display = 'table';
+      }
+  });
+
+
+</script>
+
+<!--Question Model Frist Sem-->
+<!--
+<table><thead><tr><th>Exam Question Model (Professional Issues in IS Practies)</th></tr></thead></table>
+<table>
+  <thead>
+    <tr><th>Unit One:</th></tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          <details close>
+            <summary><label style="color:blue;">1.Explan the concept  of organization with its goals and objective</label></summary>
+            <h3>Concept of Organization</h3>
+            <strong>Definition:</strong> A group of people working together to achieve common goals.<br>
+            <strong>Structure:</strong> Defined roles, responsibilities, and hierarchy.<br>
+            <strong>Resources:</strong> Utilizes human, financial, and physical resources.<br>
+            <strong>Coordination:</strong> Ensures efficient operations and alignment of efforts.<br>
+            
+            <br>
+            <h3>Goals of an Organization</h3>
+            <strong>Long-Term Vision:</strong> Broad goals like becoming a market leader or having a societal impact.<br>
+            <strong>Strategic Goals:</strong> Specific outcomes like increasing market share or improving customer satisfaction.<br>
+            <strong>Financial Success:</strong> Focus on profitability and financial stability.<br>
+            <strong>Growth & Expansion:</strong> Aims to grow in size, reach, and influence.<br>
+            <strong>Sustainability:</strong> Maintaining operational efficiency while reducing environmental impact.<br>
+            
+            <h3>Objectives of an Organization</h3>
+            <strong>Short-Term Targets:</strong> Measurable and time-bound, like increasing sales by a certain percentage.<br>
+            <strong>Operational Efficiency:</strong> Ensuring smooth day-to-day functioning (e.g., improving production).<br>
+            <strong>Employee Development:</strong> Providing training and growth opportunities.<br>
+            <strong>Customer Satisfaction:</strong>Meeting or exceeding customer expectations.<br>
+            <strong>Innovation:</strong> Continuously developing new products, services, or ideas.<br>
+          </details>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <details close>
+          <summary><label style="color:blue;">2.Give a bref introduction to the management and explain its features.</label></summary>
+          <h3>Introduction to Management</h3>
+          <strong>Definition:</strong> Management is the process of planning, organizing, leading, and controlling resources (people, finances, information) to achieve organizational goals efficiently and effectively.<br>
+          <strong>Importance:</strong> Management ensures that an organization runs smoothly, stays on track toward its goals, and adapts to challenges and changes in the environment.<br>
+          <strong>Scope:</strong> It involves various functions like decision-making, communication, and strategy implementation at different levels (top, middle, and lower management).<br>
+          
+          <h3>Features of Management</h3>
+          <strong>Goal-Oriented:</strong> Focuses on achieving specific organizational objectives.
+          <strong>Universal Application:</strong> Management principles are applicable in all types of organizations (business, government, non-profits).<br>
+          <strong>Continuous Process:</strong> Management is an ongoing process that involves constant planning, execution, and evaluation.<br>
+          <strong>People-Centric:</strong> Involves managing human resources effectively to achieve desired outcomes.<br>
+          <strong>Decision-Making:</strong> Critical decisions are made regularly to guide the organization toward its goals.<br>
+          <strong>Coordination:</strong> Ensures that all parts of the organization work together harmoniously.<br>
+          <strong>Efficiency and Effectiveness:</strong> Aims to use resources wisely while achieving maximum output with minimal waste.<br>
+          <strong>Adaptability:</strong> Management must respond to internal and external changes, such as market trends or new technologies.<br>
+        </details>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <details close>
+        <summary><label style="color:blue;">3.Explain the different hierarchy of management</label></summary>
+        <h3>Top-Level Management</h3>
+        <strong>CEOs, Presidents, Vice Presidents, Directors Role:</strong><br>
+        • Set the overall vision, mission, and strategic goals of the organization.<br>
+        • Make major decisions about policies, investments, and direction.<br>
+        • Lead the organization and represent it to stakeholders.<br>
+        • Ensure long-term growth and profitability.<br>
+
+        <h3>Middle-Level Management</h3>
+        <strong>Department Heads, Branch Managers, Division Managers.Role:</strong><br>
+        • Implement the strategies set by top-level management.<br>
+        • Oversee day-to-day operations of specific departments or divisions.<br>
+        • Coordinate between top-level management and lower-level employees.<br>
+        • Make tactical decisions to achieve organizational objectives.<br>
+
+        <h3>Lower-Level (First-Line) Management</h3>
+        <strong>Supervisors, Team Leaders, Foremen Role:</strong><br>
+        • Manage and supervise the work of frontline employees.<br>
+        • Ensure tasks are completed according to set standards and timelines.<br>
+        • Handle day-to-day issues and report progress to middle management.<br>
+        • Provide training, guidance, and support to employees.<br>
+      </details>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">4.Explain the theories in  behaviour of approach theory x and theory y</label></summary>
+      <h3>Theory X</h3>
+      <strong>Assumptions:</strong>
+      • Employees inherently dislike work and avoid it whenever possible.<br>
+      • People need to be closely supervised and controlled.<br>
+      • Employees lack ambition and prefer to be directed rather than take initiative.<br>
+      • Motivated primarily by financial rewards and fear of punishment.<br><br>
+
+      <strong>Management Style:</strong>
+      • Authoritarian, strict supervision, and control.<br>
+      • Focus on productivity and efficiency over employee well-being.<br>
+      • Use of external motivators like rewards and punishments.<br><br>
+
+      <h3>Theory Y</h3>
+      <strong>Assumptions:</strong>
+      • Employees are naturally motivated and enjoy work when they are engaged.<br>
+      • People seek responsibility and can be trusted to complete tasks.<br>
+      • Employees are capable of self-direction and creativity in problem-solving.<br>
+      • Motivation comes from within, including satisfaction from work itself.<br><br>
+
+      <strong>Management Style:</strong>
+      • Participative, encourages autonomy and self-management.<br>
+      • Emphasizes employee empowerment and involvement in decision-making.<br>
+      • Focus on intrinsic motivators like job satisfaction, recognition, and opportunities for growth.<br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">5.Why does a manager need to be a skillful leader and decision-maker to achieve the goals of an organization?</label></summary><br>
+      - A manager needs to be a skillful leader and decision-maker to achieve organizational goals for the following reasons:<br><br>
+      <strong>Clear Vision and Direction:</strong> A skillful leader provides a clear roadmap to guide the team towards organizational objectives.<br><br>
+      <strong>Motivation and Engagement:</strong> Good leadership inspires and motivates employees, driving higher performance and commitment to the organization's goals.<br><br>
+      <strong>Efficient Resource Management:</strong> Decision-makers allocate resources (time, money, personnel) effectively to optimize productivity and meet organizational targets.<br><br>
+      <strong>Problem-Solving:</strong> Strong decision-making helps quickly resolve issues, preventing delays and keeping projects on track.<br><br>
+      <strong>Adaptability:</strong> Skillful leaders make quick, informed decisions that allow the organization to adapt to changing circumstances or unexpected challenges.<br><br>
+      <strong>Conflict Resolution:</strong> Effective leaders manage and resolve conflicts, ensuring a cohesive work environment that fosters collaboration.<br><br>
+      <strong>Empowerment and Delegation:</strong> A good leader empowers team members by delegating responsibilities, promoting ownership, and ensuring the right tasks are completed to achieve goals.<br><br>
+      <strong>Accountability:</strong> A manager ensures that team members are accountable for their roles, ensuring everyone works toward the common objective.<br><br>
+      <strong>Informed Decision-Making:</strong> Skillful decision-makers use data and insights to make informed choices that benefit the organization in the long run.<br><br>
+      <strong>Building Trust:</strong> Strong leadership and sound decision-making build trust among employees, improving morale and overall organizational performance.<br><br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">6.Explain the different roles and skills of management.</label></summary><br>
+      - The different roles and skills of management include:
+      <h3>Roles of Management:</h3>
+      <strong>Planning:</strong> Managers create goals, set objectives, and develop strategies to achieve the organization’s vision.<br><br>
+      <strong>Organizing:</strong> Managers arrange resources (people, money, materials) to achieve the plan efficiently.<br><br>
+      <strong>Leading:</strong> Managers motivate, guide, and influence employees to work towards organizational goals.<br><br>
+      <strong>Controlling:</strong> Managers monitor and evaluate performance to ensure goals are being met, making adjustments when necessary.<br><br>
+      <strong>Decision-Making:</strong> Managers make choices that impact the organization, considering available options and possible outcomes.<br><br>
+      <strong>Communicating:</strong> Managers ensure information flows effectively between all levels of the organization, both upward and downward.<br><br>
+      <strong>Problem-Solving:</strong> Managers identify issues and find solutions to overcome challenges within the organization.<br><br>
+      <h3>Skills of Management:</h3>
+      <strong>Technical Skills:</strong> Knowledge and expertise in a specific area or field, such as finance, marketing, or IT, necessary for executing tasks.<br><br>
+      <strong>Human Skills:</strong> The ability to interact, motivate, and communicate effectively with people at all levels within the organization.<br><br>
+      <strong>Conceptual Skills:</strong> The ability to understand and analyze complex situations, think strategically, and view the organization as a whole.<br><br>
+      <strong>Decision-Making Skills:</strong> The ability to analyze situations, assess risks, and choose the best course of action.<br><br>
+      <strong>Leadership Skills:</strong> The ability to inspire, motivate, and lead a team toward achieving goals.<br><br>
+      <strong>Time Management:</strong> The ability to prioritize tasks and manage time efficiently to meet deadlines and goals.<br><br>
+      <strong>Adaptability and Flexibility:</strong> The ability to adjust to changes in the business environment or organizational needs.<br><br>
+      <strong>Conflict Management:</strong> The ability to resolve disputes and maintain a harmonious work environment.<br><br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">7.Planning is the fundamental function of mangement why ?</label></summary><br>
+       - Planning is the fundamental function of management because:<br><br>
+      <strong>Provides Clear Direction:</strong>Planning helps set clear goals and objectives, giving everyone a sense of purpose and a clear direction to follow.<br><br>
+      <strong>Defines the Path to Success:</strong>It outlines the steps needed to achieve the organization's goals, ensuring resources are used efficiently.<br><br>
+      <strong>Helps Anticipate Problems:</strong>Through planning, potential obstacles can be identified in advance, allowing managers to prepare solutions or alternatives.<br><br>
+      <strong>Improves Decision-Making:</strong> A solid plan provides a framework for making informed decisions that align with organizational goals.<br><br>
+      <strong>Resource Allocation:</strong> Planning ensures that resources (time, money, personnel) are allocated wisely and in the right proportion to achieve desired outcomes.<br><br>
+      <strong>Focuses on Priorities:</strong> It helps managers focus on key priorities, avoiding distractions and ensuring important tasks are completed first.<br><br>
+      <strong>Reduces Risks:</strong> Planning allows for risk assessment and the creation of contingency plans, minimizing the impact of unforeseen challenges.<br><br>
+      <strong>Facilitates Coordination:</strong> Well-planned strategies make it easier for different departments and teams to work together toward common objectives.<br><br>
+      <strong>Motivates Employees:</strong> When employees know what is expected and how their efforts fit into the larger goals, they are more motivated to contribute effectively.<br><br>
+      <strong>Establishes Benchmarks:</strong> Planning sets measurable milestones and deadlines, helping to track progress and adjust strategies as needed.<br><br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">8.Explain it with different types and step stage in planning.</label></summary>
+      <h3>Types of Planning:</h3>
+      <strong>Strategic Planning:</strong><br>
+      • Long-term goals (3-5 years or more).<br>
+      • Focuses on the overall direction of the organization.<br>
+      • Set by top-level management.<br><br>
+
+      <strong>Tactical Planning:</strong><br>
+      • Medium-term (1-3 years).<br>
+      • Breaks down strategic plans into specific, actionable tasks.<br>
+      • Done by middle management.<br><br>
+
+      <strong>Operational Planning:</strong><br>
+      • Short-term (daily, weekly, monthly).<br>
+      • Focuses on routine tasks and operations.<br>
+      • Handled by lower-level management.<br><br>
+
+      <strong>Contingency Planning:</strong><br>
+      • Plans for unexpected events or emergencies.<br>
+      • Prepares backup strategies for risks or crises.<br><br>
+
+      <h3>Steps in the Planning Process:</h3>
+
+      <strong>Set Objectives:</strong><br>
+      • Define clear, specific goals to be achieved (SMART: Specific, Measurable, Achievable, Relevant, Time-bound).<br><br>
+      
+      <strong>Analyze the Current Situation:</strong><br>
+      • Evaluate internal and external environments (SWOT: Strengths, Weaknesses, Opportunities, Threats).<br>
+      • Assess available resources and constraints.<br><br>
+
+      <strong>Develop Alternatives:</strong><br>
+      • Brainstorm different strategies to achieve the goals.<br>
+      • Consider various options and their possible outcomes.<br><br>
+
+      <strong>Evaluate Alternatives:</strong><br>
+      • Analyze the pros and cons of each alternative.<br>
+      • Assess risks, costs, and benefits of each option.<br><br>
+
+      <strong>Choose the Best Plan:</strong><br>
+      • Select the most effective strategy based on evaluation.<br>
+      • Ensure it aligns with the organization’s goals.<br><br>
+
+      <strong>Implement the Plan:</strong><br>
+      • Put the plan into action.<br>
+      • Allocate resources and assign responsibilities to teams.<br><br>
+
+      <strong>Monitor and Control:</strong><br>
+      • Track progress and compare actual results to expected outcomes.<br>
+      • Make adjustments when necessary.<br><br>
+
+      <strong>Review and Revise:</strong><br>
+      • Evaluate the effectiveness of the plan.<br>
+      • Learn from the experience and revise for future planning.<br><br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">9.Good decisions give good results. In order to make good decisions, explain the different types of processes involved in decision-making.</label></summary>
+      <h3>Types of Processes Involved in Decision-Making:</h3>
+      
+      <strong>Problem Identification:</strong><br>
+      • Recognize and define the problem or decision to be made.<br>
+      • Understand the scope and impact of the issue.<br><br>
+
+      <strong>Information Gathering:</strong> <br>              
+      • Collect relevant data and information to understand the situation fully.<br>
+      • Use internal and external sources, such as reports, expert opinions, or surveys.<br><br>
+
+      <strong>Develop Alternatives:</strong><br>   
+      • Brainstorm different options or solutions to address the problem.<br>
+      • Consider a variety of approaches to ensure flexibility in choosing the best option.<br><br>
+
+      <strong>Evaluating Alternatives:</strong><br>
+      • Assess each option based on factors like feasibility, cost, benefits, and alignment with goals.<br>
+      • Weigh the pros and cons of each alternative.<br><br>
+
+      <strong>Making the Decision:</strong><br>
+      • Choose the best alternative based on evaluation.<br>
+      • Consider the long-term impact and risks before finalizing the decision.<br><br>
+
+      <strong>Implementing the Decision:</strong><br>
+      • Put the chosen solution into action.<br>
+      • Allocate resources and assign tasks to ensure proper execution.<br><br>
+
+      <strong>Monitoring and Reviewing:</strong><br>
+      • Track the results of the decision to see if it achieves the desired outcome.<br>
+      • Adjust the approach if necessary to improve effectiveness.<br><br>
+
+      <strong>Feedback and Learning:</strong><br>
+      • Gather feedback from those involved in the decision and its execution.<br>
+      • Learn from the process to improve future decision-making.<br><br>
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">10.Does the good leadership can control and manage plan the system of the organization in the proper way ? justify.</label></summary><br>
+      - Yes, good leadership can control, manage, and plan the system of an organization in the proper way. Here's how:<br><br>
+      <strong>Clear Vision and Direction:</strong> A good leader sets a clear vision and communicates it effectively to the entire organization. This ensures everyone understands the goals, purpose, and how their work contributes to the overall plan.<br><br>
+      <strong>Strategic Planning:</strong> Leaders are key in developing long-term strategic plans that guide the organization's growth and development. They use their understanding of the industry, market trends, and internal strengths to create effective, actionable plans.<br><br>
+      <strong>Resource Allocation:</strong> Effective leaders ensure that resources (time, money, and manpower) are allocated efficiently to meet organizational goals. They make informed decisions to avoid waste and maximize productivity.<br><br>
+      <strong>Coordination and Alignment:</strong> A strong leader ensures that all departments and teams are working toward common goals. By coordinating efforts, they make sure everyone’s actions are aligned with the organizational plan.<br><br>
+      <strong>Monitoring and Controlling:</strong> Leaders actively monitor progress to ensure that plans are being followed correctly. They identify deviations from the plan and take corrective actions to keep the organization on track.<br><br>
+      <strong>Problem Solving and Decision Making:</strong> Good leaders anticipate challenges, make timely decisions, and find solutions to any problems that may arise, ensuring that plans remain on course.<br><br>
+      <strong>Motivating and Inspiring Teams:</strong> Leaders inspire and motivate employees, fostering a positive work environment that drives performance. Engaged employees are more likely to contribute effectively to the successful execution of the plan.<br><br>
+      <strong>Adaptability:</strong> Effective leaders are adaptable and can revise plans as necessary when faced with unforeseen challenges or changing conditions. This flexibility allows the organization to remain agile and responsive.<br><br>
+      <strong>Accountability:</strong> Good leaders hold individuals and teams accountable for their roles in executing the plan, ensuring that responsibilities are met and objectives are achieved.<br><br>
+      <strong>Continuous Improvement:</strong> Strong leaders promote a culture of learning and continuous improvement. They review outcomes, gather feedback, and refine the system and processes to improve future performance.<br><br>
+    </details>
+</td>
+</tr><br><br>
+
+<tr>
+  <td>
+    <details close>
+      <summary><label style="color:blue;">11.What do you think are the main challenges faced by small countries like Nepal in protecting their industries while engaging in free trade? What are the other different types of emerging challenges faced by managers in the 21st century?</label></summary>
+      <h3>Main Challenges Faced by Small Countries like Nepal in Protecting Their Industries While Engaging in Free Trade:</h3>
+      • Competition from Larger Economies: Free trade exposes local industries to fierce competition from more established foreign companies with better resources, technology, and economies of scale.<br><br>
+      • countries like Nepal may struggle to compete with lower-cost products from larger, more efficient industries.<br><br>
+
+      <strong>Loss of Domestic Jobs:</strong> As foreign products flood the market, local businesses might be unable to compete, leading to layoffs and unemployment in industries that are less competitive.<br><br>
+      <strong>Vulnerability to Global Economic Shifts:</strong> Small economies are more vulnerable to external shocks, such as global economic downturns, trade imbalances, or price volatility in international markets.<br><br>
+      <strong>Lack of Technology and Innovation:</strong> Free trade often exposes small countries to advanced technologies used by larger nations. However, local industries may lack the resources and expertise to innovate and improve their own technologies to remain competitive.<br><br>
+      <strong>Unequal Trade Terms:</strong> Smaller countries may struggle to negotiate favorable trade agreements, which can result in unequal terms that benefit larger trading partners more than local industries.<br><br>
+      <strong>Overdependence on Foreign Imports:</strong> Free trade may lead to over-reliance on foreign goods and services, weakening the development of domestic industries and making small countries more dependent on global markets.<br><br>
+      <strong>Environmental and Social Impact:</strong> Free trade may lead to exploitation of natural resources, unsustainable development practices, and disregard for local social standards and regulations, negatively impacting local communities and the environment.<br><br>
+      <strong>Balancing Protectionism with Free Trade:</strong> Small countries face the challenge of protecting key industries (such as agriculture or manufacturing) while complying with international trade agreements that require lowering tariffs and trade barriers.<br><br>
+
+      <h3>Emerging Challenges Faced by Managers in the 21st Century:</h3>
+      <strong>Technological Disruption:</strong> Rapid advancements in technology (such as AI, automation, and digital transformation) require managers to continuously adapt their strategies, upskill employees, and rethink business models to remain competitive.<br><br>
+      <strong>Globalization and Cross-Cultural Management:</strong> Managers must deal with the complexities of managing diverse teams across different geographies, cultures, and time zones. This requires strong communication, cultural sensitivity, and the ability to manage global operations effectively.<br><br>
+      <strong>Sustainability and Corporate Social Responsibility (CSR):</strong> There is increasing pressure on managers to implement sustainable business practices, reduce the carbon footprint, and take social responsibility for the community and environment.<br><br>
+      <strong>Data Privacy and Cybersecurity:</strong> With growing reliance on digital tools and online platforms, managers must address issues related to data protection, cybersecurity risks, and privacy concerns, while ensuring compliance with regulations.<br><br>
+      <strong>Talent Management and Retention:</strong> The modern workforce is increasingly remote, flexible, and diverse, making it difficult for managers to attract, retain, and develop top talent. Managers need to create work environments that encourage employee engagement and growth.<br><br>
+      <strong>Economic Uncertainty:</strong> Global economic volatility, such as trade wars, financial crises, or inflation, forces managers to make quick decisions, maintain financial stability, and anticipate future market trends.<br><br>
+      <strong>Agility and Adaptation:</strong> The fast-paced changes in markets, customer needs, and technology require managers to be more agile, able to pivot business strategies and make quick, effective decisions.<br><br>
+      <strong>Work-Life Balance and Employee Well-being:</strong> Managers face increasing pressure to support employees in maintaining a healthy work-life balance, addressing mental health concerns, and creating positive, supportive work environments.<br><br>
+      <strong>Regulatory Compliance:</strong> Managers must navigate ever-changing laws and regulations in areas such as labor laws, environmental standards, and international trade agreements, ensuring the company remains compliant.<br><br>
+      <strong>Innovation and Creativity:</strong> In the competitive 21st-century business landscape, managers need to foster a culture of innovation, encouraging creative problem-solving and out-of-the-box thinking to drive business growth.<br><br>
+
+    </details>
+</td>
+</tr>
+
+<tr>
+  <td>
+    <label style="color:blue;">12.Write Short Note on the following:</label>
+
+    <details close>
+      <summary><label style="color:blue;">a.Coaching as an Emerging Leadership Approach</label></summary><br><br>
+      Coaching is an emerging leadership approach that focuses on developing employees, improving their performance, and fostering long-term growth. It involves providing personalized guidance and feedback based on 
+      individual needs and goals, helping employees build skills, knowledge, and confidence. Coaching also promotes better communication, 
+      encouraging open, two-way conversations between leaders and their teams. It increases employee motivation by aligning personal goals 
+      with the organization’s mission and helps create a culture of accountability through goal-setting. Leaders also benefit from coaching, 
+      as it helps develop their leadership skills and prepares them to guide future leaders. Additionally, coaching enhances adaptability and 
+      problem-solving, enabling employees to navigate changes more effectively. Overall, coaching fosters a positive and supportive organizational 
+      culture, strengthening team relationships and morale while driving success for both individuals and the organization.
+      <br><br>
+    </details>
+    <details close>
+      <summary><labe style="color:blue;">
+        b.Steps Involved in the Planning Process of Motivation</label></summary><br><br>
+        The planning process of motivation involves several key steps to ensure that employees are effectively motivated and aligned with 
+        organizational goals. First, clear and specific goals need to be defined, ensuring they are SMART (Specific, Measurable, Achievable, 
+        Relevant, and Time-bound), and that they align with the organization’s objectives. Next, understanding employee needs is crucial, 
+        so leaders should assess what drives their team through surveys or discussions, considering factors like personal growth and rewards. 
+        Based on these insights, leaders develop motivation strategies that address both intrinsic and extrinsic factors, such as career 
+        development opportunities or monetary rewards. Then, an action plan is created to outline how these strategies will be implemented, 
+        including recognition programs or new incentive systems. Once the plan is in place, it's essential to clearly communicate the motivation strategies to employees, 
+        ensuring they understand how their efforts contribute to the company’s success. After implementation, continuous monitoring of progress is necessary, with regular 
+        feedback sessions to assess the effectiveness of the strategies and make any necessary adjustments. This process helps foster a motivated, engaged workforce that 
+        is committed to achieving organizational goals.
+        <br><br>
+    </details></labe></summary>
+</td>
+</tr>    
+  </tbody>
+</table><br>
+-->
+
+
+
+</center>
+</section>
+</main>
+
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>
