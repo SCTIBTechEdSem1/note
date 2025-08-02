@@ -1,0 +1,154 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="../Kyubiks/StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+  <!-- Header and Navbar -->
+  <header>
+    <nav id="navbar">
+        <a href="../Kyubiks/Kyubiks.html">Kyubiks</a>
+        <a href="../Kyubiks/onlineshop.html">Online Shop</a>
+        <a href="subject.html">Subject</a>
+        <a href="../Kyubiks/nextsem.html"><label style="color:red;">Sem2</label></a>
+        
+    </nav>
+  </header>
+
+  <!-- Bottom Fixed Navigation -->
+ <div id="bottomNav">
+    <a href="oop.html">Note</a>
+    <a href="syllabus.html"><label style="color:red;">Syllabus</label></a>
+    <a href="routine.html">Routine</a>
+    <a href="student.html">Student</a>
+  </div>
+
+<main>
+<center>
+<center><h1>Syllabus</h1></center>
+<section id="one">
+
+<table><thead><tr><th><center>Unite One: </center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Introduction (6hrs)</th></tr></thead>
+      <tbody>
+       <tr><td>1. Digital Signals, Digital Waveforms</td></tr>
+       <tr><td>2. Digital Logic, Digital Operations</td></tr>
+       <tr><td>3. Digital IC, Computers</td></tr>
+       <tr><td>4. Clock Waveforms</td></tr>
+       <tr><td>5. Number Systems and conversions</td></tr>
+       <tr><td>6. Binary arithmetic</td></tr>
+       <tr><td>7. Different types of Coding (ASCII, BCD, Gray code, Excess 3 Code)</td></tr>
+      </tbody>
+    </table><br>
+
+<table><thead><tr><th><center>Unit Two:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Logic Gates (5 hrs)</th></tr></thead>
+      <tbody>
+        <tr><td>1. Basic Gates: NOT, OR, AND</td></tr>
+        <tr><td>2. Universal Gates: NOR, NAND</td></tr>
+        <tr><td>3. Special Gates: XOR, XNOR</td></tr>
+        <tr><td>4. Realization of other Gates from Universal Gates</td></tr>
+        <tr><td>5. Boolean Algebra</td></tr>
+        <tr><td>6. K Map, SOP, POS, Don’t Care Conditions</td></tr>
+      </tbody>
+    </table><br>
+
+<table><thead><tr><th><center>Unit Three:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Combinational Logic Design (10 hrs)</th></tr></thead>
+      <tbody>
+        <tr><td>1. Multiplexer, Demultiplexer</td></tr>
+        <tr><td>2. Encoder, Decoder</td></tr>
+        <tr><td>3. Half Adder, Full Adder</td></tr>
+        <tr><td>4. Parity Generator, Checker</td></tr>
+        <tr><td>5. Concept of ROM, PROM, EPROM, PLA, PAL</td></tr>
+      </tbody>
+    </table><br>
+
+<table><thead><tr><th><center>Unit Four:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Counter and Registers (13 hrs)</th></tr></thead>
+      <tbody>
+        <tr><td>1. Flip flops: RS, JK, JK master-slave, D & T flip flops (level trigger, edge trigger, excitation table)</td></tr>
+        <tr><td>2. Synchronous and Asynchronous Counters</td></tr>
+        <tr><td>3. Ripple Counter</td></tr>
+        <tr><td>4. Ring Counter</td></tr>
+        <tr><td>5. Modulus Counter</td></tr>
+        <tr><td>6. Decade Counter</td></tr>
+        <tr><td>7. A digital Clock</td></tr>
+        <tr><td>8. Types of Registers</td></tr>
+        <tr><td>9. Serial in Parallel Out</td></tr>
+        <tr><td>10. Serial in Serial Out</td></tr>
+        <tr><td>11. Parallel in Parallel Out</td></tr>
+        <tr><td>12. Parallel in Series Out</td></tr>
+        <tr><td>13. Shift Registers</td></tr>
+      </tbody>
+    </table><br>
+
+
+<table><thead><tr><th><center>Unit Five:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Sequential Circuits and design (7 hrs)</th></tr></thead>
+      <tbody>
+        <tr><td>1. Concept of state, state diagram</td></tr>
+        <tr><td>2. Transition Tables, redundant states</td></tr>
+        <tr><td>3. Using flip flops to realize the synchronous models</td></tr>
+        <tr><td>4. Asynchronous Sequential Circuits concepts and design</td></tr>
+      </tbody>
+    </table><br>
+
+    <table><thead><tr><th><center>Unit Six:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Introduction to ALU Design (4 hrs)</th></tr></thead>
+      <tbody>
+        <tr><td>1. CPU overview</td></tr>
+        <tr><td>2. ALU</td></tr>
+        <tr><td>3. Bus architecture</td></tr>
+        <tr><td>4. Designing a basic ALU</td></tr>
+      </tbody>
+    </table><br>
+
+  
+</section>
+</center>    
+</main>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>
