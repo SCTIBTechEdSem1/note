@@ -1,0 +1,124 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCTI B.TechEd Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="../Kyubiks/StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+  <!-- Header and Navbar -->
+  <header>
+    <nav id="navbar">
+        <a href="../Kyubiks/Kyubiks.html">Kyubiks</a>
+        <a href="../Kyubiks/onlineshop.html">Online Shop</a>
+        <a href="subject.html">Subject</a>
+        <a href="../Kyubiks/nextsem.html"><label style="color:red;">Sem2</label></a>
+        
+    </nav>
+  </header>
+
+  <!-- Bottom Fixed Navigation -->
+ <div id="bottomNav">
+    <a href="index.html">Note</a>
+    <a href="syllabus.html"><label style="color:red;">Syllabus</label></a>
+    <a href="routine.html">Routine</a>
+    <a href="student.html">Student</a>
+  </div>
+
+<main>
+<center>
+<center><h1>Syllabus</h1></center>
+<section id="one">
+  <table><thead><tr><th><center>Module 1:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Introduction to instructional design</th></tr></thead>
+      <tbody>
+        <tr><td>1. know about ID models</td></tr>
+        <tr><td>2. historical approaches of ID models</td></tr>
+        <tr><td>3. application of ID models</td></tr>
+        <tr><td>4. types of ID models</td></tr>
+        <tr><td>5. role of ID models in teaching and training</td></tr>
+      </tbody>
+    </table><br>
+
+  <table><thead><tr><th><center>Module 2:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Instructional design models and their implications</th></tr></thead>
+      <tbody>
+        <tr><td>1. explore motivational theory</td></tr>
+        <tr><td>2. design and develop a motivational session</td></tr>
+        <tr><td>3. explore ADDIE model</td></tr>
+        <tr><td>4. design and develop ADDIE based instructions</td></tr>
+        <tr><td>5. explore ASSURE model</td></tr>
+        <tr><td>6. design and develop ASSURE-based sessions</td></tr>
+        <tr><td>7. explore Merrill's First Principles of Instruction</td></tr>
+        <tr><td>8. design and develop Merrill's-based sessions</td></tr>
+      </tbody>
+    </table><br>
+
+  <table><thead><tr><th><center>Module 3:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Planning and executing session</th></tr></thead>
+      <tbody>
+        <tr><td><strong>In this module, students will</strong>:</td></tr>
+        <tr><td>1. Gagne's Nine Events of Instruction</td></tr>
+        <tr><td>2. design and develop the lesson plan</td></tr>
+        <tr><td>3. develop the training package</td></tr>
+        <tr><td>4. explore TPACK model</td></tr>
+        <tr><td>5. explore SMART model</td></tr>
+      </tbody>
+    </table><br>
+
+  <table><thead><tr><th><center>Module 4:</center></th></tr></thead></table>
+  <table>
+      <thead><tr><th>Develop the proper ID for training</th></tr></thead>
+      <tr><td><strong>In this module, students will</strong>:</td></tr>
+      <tr><td>1. develop and validate the ID models</td></tr>
+      <tr><td>2. integrate ID models</td></tr>
+      <tr><td>3. application of Kirkpatrick model in an educational evaluation</td></tr>
+      <tr><td>4. design and develop Self Dependent Learning Materials</td></tr>
+      <tbody>
+        
+      </tbody>
+    </table><br>
+
+  
+</section>
+</center>    
+</main>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>
