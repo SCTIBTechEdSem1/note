@@ -1,0 +1,127 @@
+<!-- Code Copyright 2024 Kyubiks Label (Note App) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (SCTI B.TechEd and IT) Semester -->
+<html>
+<head>
+<title>SCTI B.TechEd Notes (Kyubiks)</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="Sem1/Kyubiks/image/logo.png">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<body onload="setTimeout(function(){window.location ='Sem1/subject.html';}, 3000)">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+
+<style>
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+        
+body {
+    background-color:black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+        
+header {
+    margin-bottom: 0px;
+}
+        
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+        
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color:black;
+    animation: fadeIn 2s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    color:black;
+    animation: fadeIn 2s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
+        
+main {
+    font-size: 24px;
+    font-weight: 500;
+    animation: slideIn 1.5s ease-in-out 1s;
+    animation-fill-mode: both;
+}
+        
+.intro p {
+    margin: 10px 0;
+    color:black;
+}
+        
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+        
+    main {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 250px) {
+    h2 {
+        font-size: 36px;
+    }
+        
+    main {
+        font-size: 18px;
+    }
+}
+        
+        </style>
+        <body>
+            <header>
+                <img src="Sem1/Kyubiks/image/logo.png" alt="School Logo" class="logo animated">
+                <h1 class="animated">SCTI B.TechEd<br>BIT And IT</h1>
+                <br>
+                <h2 class="animated">App For (Student) Note</h2>
+                <h2 class="animated">Developed By Kyubiks</h2>
+            </header>
+            <main>
+                <div class="intro animated">
+                    <br>
+                </div>
+            </main>
+</html>
