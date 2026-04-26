@@ -1,0 +1,185 @@
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-weight: bold;   
+  }
+
+  a:hover {
+    color: inherit; 
+  }
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.description {
+    display: none; /* Initially hide the descriptions */
+    margin-top: 5px;
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Top Navigation Bar Styling */
+nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, top 0.3s ease;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    float: left;
+    display: block;
+    font-size: 15px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* When scrolled, change the navbar's background color */
+nav.scrolled {
+    background-color:black;
+}
+
+/* Fixed bottom navigation */
+#bottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottomNav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#bottomNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main content padding to avoid navbar overlap */
+main {
+    padding-top: 50px; /* Adjusted to avoid content being hidden behind the navbar */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+}
+
+/* Math CSS*/
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+.fraction span {
+    display: block;
+    padding: 0;
+}
+.fraction .top {
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+.fraction .bottom {
+    padding-top: 2px;
+}
+i {
+    font-style: italic;
+}
+
+.union {
+    font-size: 24px; /* Adjust size as needed */
+}
+.upper-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 15px; /* Adjust size as needed */
+}
+.upper-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 1.5px solid black;
+    
+}
