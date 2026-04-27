@@ -36,16 +36,86 @@
 <center>
 <center><h1>Operating System</h1></center>
 <section id="one">
-<table><thead><tr><th><center>Unit One:</center></th></tr></thead></table>
-  <table>
-      <tbody>
-        <tr><td></td></tr>
-        <tr><td></td></tr>
-        <tr><td></td></tr>
-        <tr><td></td></tr>
-        <tr><td></td></tr>
-      </tbody>
-    </table><br>
+<table><thead><tr><th><center>Unit One: Introduction (5 Hours)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Definition of Operating System: Explanation of what an operating system is.</td></tr>
+    <tr><td>2. Views of Operating System: Application View: How the OS appears to application developers/users; System View: How the OS manages resources and provides services; Implementation View: How the OS is implemented and interacts with hardware.</td></tr>
+    <tr><td>3. History and Evolution of Operating System: Overview of historical development; Milestones and major advancements in OS design and functionalities.</td></tr>
+    <tr><td>4. Types of Operating Systems: Single-user vs. multi-user systems; Single-tasking vs. multi-tasking systems; Real-time systems, network operating systems, embedded systems, etc.</td></tr>
+    <tr><td>5. System Call and Call Handling: Explanation of system calls and their importance; How system calls are handled by the OS; Examples of common system calls.</td></tr>
+    <tr><td>6. System Programs and OS Structures: Overview of system programs; Discussion of OS structures (monolithic, microkernel, etc.); Role of the shell.</td></tr>
+    <tr><td>7. Virtual Machine: Introduction to virtualization; Role in OS environments; Benefits and applications.</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Two: Process, Process Management and Scheduling (11 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Processes and Threads: Distinction between process and program; Introduction to multiprogramming; Process model, states (new, ready, running, waiting, terminated), and PCB.</td></tr>
+    <tr><td>2. Threading: Exploring threads, differences between threads and processes, user and kernel space threads.</td></tr>
+    <tr><td>3. Inter-process Communication (IPC): Mechanisms, race conditions, critical sections, and mutual exclusion.</td></tr>
+    <tr><td>4. Mutual Exclusion Techniques (Busy Waiting): Disabling Interrupts, Lock Variables, Strict Alteration, Peterson’s Solution, Test and Set Lock.</td></tr>
+    <tr><td>5. Mutual Exclusion (Non-Busy Waiting): Sleep and Wakeup mechanisms, Semaphores, Monitors, and Message Passing.</td></tr>
+    <tr><td>6. Classical IPC problems: Producer-Consumer, Sleeping Barber, Dining Philosopher Problem.</td></tr>
+    <tr><td>7. Process Scheduling: Goals of scheduling; Batch algorithms: First-Come, First-Served (FCFS), Shortest Job First (SJF), Shortest Remaining Time Next (SRTN).</td></tr>
+    <tr><td>8. Interactive Scheduling: Round-Robin scheduling, Priority-based scheduling, Multiple Queues.</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Three: Deadlock and Deadlock Handling (6 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Introduction to Deadlock: Definition and significance; Deadlock characterization (necessary conditions); Preemptable and non-preemptable resources.</td></tr>
+    <tr><td>2. Resource-Allocation Graph (RAG): Use in visualizing resource allocation and potential deadlocks.</td></tr>
+    <tr><td>3. Deadlock Handling Strategies: Introduction to the Ostrich Algorithm; Deadlock prevention (ensuring conditions cannot hold).</td></tr>
+    <tr><td>4. Deadlock Avoidance: Dynamic strategies to prevent unsafe states.</td></tr>
+    <tr><td>5. Deadlock Detection and Recovery: Algorithms for multiple resources; Recovery strategies (process termination, resource preemption).</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Four: Memory Management (6 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Introduction to Memory Management: Overview; Logical vs. physical addresses; Concepts of swapping.</td></tr>
+    <tr><td>2. Contiguous Allocation: Explanation of techniques; Advantages and limitations.</td></tr>
+    <tr><td>3. Non-Contiguous Memory Allocation (Paging): Introduction to paging, page tables, page faults, and replacement algorithms.</td></tr>
+    <tr><td>4. Segmentation: Overview of segmentation scheme; Benefits and challenges.</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Five: Virtual Memory (6 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Introduction to Virtual Memory: Fundamental concepts, functionality, and benefits.</td></tr>
+    <tr><td>2. Working Mechanism: Interaction with physical memory and secondary storage; Advantages and disadvantages (performance impact).</td></tr>
+    <tr><td>3. Demand Paging: Operational mechanism and performance implications in virtual memory.</td></tr>
+    <tr><td>4. Page Replacement Algorithms: FIFO, Second Chance, Optimal, LRU, LFU algorithms.</td></tr>
+    <tr><td>5. Frame Allocation: Categories and strategies for virtual memory management.</td></tr>
+    <tr><td>6. Thrashing: Causes, effects, and remedies in virtual memory systems.</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Six: File and Device Management (7 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. File System Concepts: Access mechanisms (read/write); Directory structures (hierarchical, flat); Protection mechanisms (permissions/security).</td></tr>
+    <tr><td>2. Consistency and Semantics: Data consistency and operation semantics.</td></tr>
+    <tr><td>3. Device Management: Overview; I/O interfaces; Kernel I/O Subsystem roles.</td></tr>
+  </tbody>
+</table><br>
+
+<table><thead><tr><th><center>Unit Seven: OS Case Study (4 hrs.)</center></th></tr></thead></table>
+<table>
+  <tbody>
+    <tr><td>1. Linux and Unix History: Historical background and evolution.</td></tr>
+    <tr><td>2. Kernel Modules: Concept, roles, and extending functionalities.</td></tr>
+    <tr><td>3. Process and Scheduling: Creation, scheduling algorithms, and termination in Linux/Unix.</td></tr>
+    <tr><td>4. IPC: Communication mechanisms within Linux and UNIX environments.</td></tr>
+    <tr><td>5. Memory Management: Virtual memory and page handling in Linux/Unix.</td></tr>
+    <tr><td>6. File and Device Management: Structure, device management, and I/O operations in Linux/Unix.</td></tr>
+  </tbody>
+</table><br>
 
 </section>
 </center>    
